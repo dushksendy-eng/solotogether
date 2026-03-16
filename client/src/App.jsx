@@ -26,6 +26,7 @@ function AppRoutes() {
         <Route path="/login"       element={<Login />} />
         <Route path="/signup"      element={<Signup />} />
         <Route path="/posts"       element={<ActivityPosts />} />
+        
         <Route path="/posts/:id"   element={<PostDetail />} />
         <Route path="/dashboard"   element={<PrivateRoute><Dashboard /></PrivateRoute>} />
         <Route path="/create-plan" element={<PrivateRoute><CreatePlan /></PrivateRoute>} />
