@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: 'http://localhost:8000/api' })
+const api = axios.create({ baseURL: 'http://solotogether.onrender.com' })
 
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('st_token')
